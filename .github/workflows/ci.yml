@@ -23,11 +23,11 @@ jobs:
       fail-fast: false        
   
     steps:
-      -uses: actions/checkout@v4
-      -name: Setup Node Js ${{matrix.node-version}}
-       uses: actions/setup-node@v4
-       with:
-         node-version: ${{matrix.node-version}}
-         cache: 'npm'
-      -run: npm ci
-      -run: npm test
+      - uses: actions/checkout@v4
+      - name: Setup Node Js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm test
