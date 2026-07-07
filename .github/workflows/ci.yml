@@ -38,6 +38,10 @@ jobs:
       - name: Deploy API
         run: |
           echo "Deploying API version ${{ secrets.API_KEY }}"
+
+      - name: Deploy API
+        run: |
+          echo "Deploying API version ${{ secrets.API_CHALLENGE }}"
      
       # Variables a nivel del step
       - name: Build
