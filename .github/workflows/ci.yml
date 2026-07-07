@@ -47,5 +47,5 @@ jobs:
           path: dist/
       - name: Deploy  
         run: |
-          echo "Deploying: ${cat dist/build-info.json}"
+          echo "Deploying: $(cat dist/build-info.json)"
           
