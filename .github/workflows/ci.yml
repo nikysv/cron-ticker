@@ -41,7 +41,7 @@ jobs:
 
       - name: Deploy API
         run: |
-          echo "Deploying API version ${{ secrets.API_CHALLENGE }}"
+          echo "Deploying API CHALLENGE ${{ secrets.API_CHALLENGE }}"
      
       # Variables a nivel del step
       - name: Build
